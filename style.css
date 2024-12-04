@@ -288,6 +288,24 @@ th {
     /* Sets the text color for table headers */
 }
 
+#row4 td {
+    border-bottom: none;
+    /* Removes the bottom border for the last row */
+}
+
+#number {
+    font-weight: 600;
+    /* Makes the text bold */
+    color: hsl(14, 45%, 36%);
+    /* Sets the text color */
+}
+
+/* Strong Element */
+strong {
+    font-weight: 700;
+    /* Increases the font weight */
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     body {
