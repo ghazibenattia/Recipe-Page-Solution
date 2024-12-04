@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+/* Imports Google Fonts for the page */
+
+/* Global Reset */
+* {
+    margin: 0;
+    /* Removes default margin for all elements */
+    padding: 0;
+    /* Removes default padding for all elements */
+    box-sizing: border-box;
+    /* Ensures consistent box model across elements */
+}
+
+/* Body Styles */
+body {
+    background-color: hsl(30, 54%, 90%);
+    /* Sets the background color */
+    display: flex;
+    /* Enables Flexbox for layout */
+    flex-direction: column;
+    /* Arranges child elements in a column */
+    align-items: center;
+    /* Horizontally centers content */
+    justify-content: center;
+    /* Vertically centers content */
+    height: 180vh;
+    /* Temporary height for alignment and layout testing */
+    font-family: "Outfit", sans-serif;
+    /* Sets the font family */
+    font-weight: 300;
+    /* Sets a light font weight */
+    font-size: 1rem;
+    /* Sets the base font size */
+    overflow-x: hidden;
+    /* Ensures no horizontal scrolling */
+}
+
+/* Main Container */
+#container {
+    width: 100%;
+    max-width: 44rem;
+    /* Sets the maximum width of the container */
+    background-color: hsl(0, 0%, 100%);
+    /* Sets the background color */
+    border-radius: 10px;
+    /* Rounds the container's corners */
+    text-align: left;
+    /* Aligns text to the left */
+    padding: 40px;
+    /* Adds inner spacing */
+    margin: 1rem;
+    /* Adds outer spacing */
+    display: flex;
+    /* Enables Flexbox for layout */
+    flex-direction: column;
+    /* Stacks child elements vertically */
+}
+
+/* Food Image Styling */
+.OmletteImage {
+    width: 100%;
+    /* Makes the image fill the container width */
+    height: auto;
+    border-radius: 15px;
+    /* Rounds the corners of the image */
+}
+
+/* Title Styling */
+.PageTitle h1 {
+    font-family: "Young Serif", serif;
+    /* Uses a serif font for the title */
+    font-size: 2rem;
+    /* Sets the font size */
+    font-weight: 200;
+    /* Applies a light font weight */
+    margin-top: 1rem;
+    /* Adds spacing above the title */
+    color: hsla(0, 0%, 0%, 0.74);
+    /* Sets the text color with transparency */
+}
+
+/* Description Section */
+.Description {
+    font-size: 0.9rem;
+    /* Sets the font size */
+    font-weight: 400;
+    /* Applies a normal font weight */
+    margin-top: 0.8rem;
+    /* Adds spacing above the section */
+    color: hsla(0, 3%, 27%, 0.74);
+    /* Sets a subtle text color */
+}
+
+/* Preparation Time Section */
+#PreparationTime {
+    background-color: hsl(330, 100%, 98%);
+    /* Sets the section background color */
+    border-radius: 10px;
+    /* Rounds the section corners */
+    padding: 1rem;
+    /* Adds inner spacing */
+    margin-top: 0.9rem;
+    /* Adds spacing above the section */
+    line-height: 1.7rem;
+    /* Adjusts line spacing */
+}
+
+#PreparationTime h4 {
+    font-family: "Outfit", sans-serif;
+    /* Uses a sans-serif font for the header */
+    font-weight: 600;
+    /* Makes the header bold */
+    font-size: 1rem;
+    /* Sets the font size */
+    color: hsl(332, 51%, 32%);
+    /* Sets the text color */
+}
+
+#PreparationTime ul {
+    margin-top: 0.8rem;
+    /* Adds spacing above the list */
+    padding-left: 2rem;
+    /* Adds left padding for alignment */
+    list-style: none;
+    /* Removes default bullet points */
+    font-size: 0.9rem;
+    /* Sets the font size */
+    color: hsla(0, 3%, 27%, 0.74);
+    /* Sets a subtle text color */
+    font-weight: 300;
+    /* Uses a light font weight */
+}
+
+#PreparationTime ul li::before {
+    content: "\2022";
+    /* Adds a custom bullet point */
+    color: hsl(332, 51%, 32%);
+    /* Sets the bullet color */
+    margin-right: 1.5rem;
+    /* Adds spacing after the bullet */
+}
+
+/* Ingredients Section */
+#Ing {
+    padding: 1rem;
+    /* Adds inner spacing */
+    margin-top: 0.9rem;
+    /* Adds spacing above the section */
+    line-height: 1.5rem;
+    /* Adjusts line spacing */
+}
+
+#Ing h2 {
+    font-family: "Young Serif", serif;
+    /* Uses a serif font for the header */
+    font-size: 1.4rem;
+    /* Sets the font size */
+    font-weight: 500;
+    /* Sets the font to a medium weight (slightly bold) */
+    color: hsl(14, 45%, 36%);
+    /* Sets the text color */
+}
+
+#Ing ul {
+    margin-top: 1rem;
+    /* Adds spacing above the list */
+    padding-left: 2rem;
+    /* Adds left padding for alignment */
+    list-style: none;
+    /* Removes default bullet points */
+    font-size: 0.9rem;
+    /* Sets the font size */
+    color: hsla(0, 3%, 27%, 0.74);
+    /* Sets a subtle text color */
+    font-weight: 300;
+    /* Uses a light font weight */
+}
+
+#Ing ul li::before {
+    content: "\2022";
+    /* Adds a custom bullet point */
+    color: hsl(14, 45%, 36%);
+    /* Sets the bullet color */
+    margin-right: 1.5rem;
+    /* Adds spacing after the bullet */
+}
+
+/* Instructions Section */
+#Ins {
+    padding: 1rem;
+    /* Adds inner spacing */
+    margin-top: 0.9rem;
+    /* Adds spacing above the section */
+}
+
+#Ins h2 {
+    font-family: "Young Serif", serif;
+    /* Uses a serif font for the header */
+    font-size: 1.4rem;
+    /* Sets the font size */
+    font-weight: 500;
+    /* Sets the font to a medium weight (slightly bold) */
+    color: hsl(14, 45%, 36%);
+    /* Sets the text color */
+}
+
+#Ins ol {
+    margin-top: 1rem;
+    /* Adds spacing above the list */
+    padding-left: 1rem;
+    /* Adds left padding for alignment */
+    list-style: none;
+    /* Removes default numbering */
+    font-size: 0.9rem;
+    /* Sets the font size */
+    color: hsla(0, 3%, 27%, 0.74);
+    /* Sets a subtle text color */
+}
+
+#Ins li {
+    counter-increment: count-me;
+    /* Enables custom numbering */
+    padding: 5px;
+    /* Adds padding around each list item */
+}
+
+#Ins li::before {
+    content: counter(count-me) ". ";
+    /* Adds custom numbering with formatting */
+    font-weight: bold;
+    /* Makes the numbers bold */
+    color: hsl(14, 45%, 36%);
+    /* Sets the numbering color */
+}
+
+/* Nutrition Section */
+#Nut {
+    padding: 1rem;
+    /* Adds inner spacing */
+    margin-top: 0.9rem;
+    /* Adds spacing above the section */
+}
+
+#Nut h2 {
+    font-family: "Young Serif", serif;
+    /* Uses a serif font for the header */
+    font-size: 1.4rem;
+    /* Sets the font size */
+    font-weight: 500;
+    /* Sets the font to a medium weight (slightly bold) */
+    color: hsl(14, 45%, 36%);
+    /* Sets the text color */
+}
+
+#Nut p {
+    font-size: 0.9rem;
+    /* Sets the paragraph font size */
+    color: hsla(0, 3%, 27%, 0.74);
+    /* Sets a subtle text color */
+    margin-top: 0.8rem;
+    /* Adds spacing above the paragraph */
+}
+
+table {
+    width: 100%;
+    /* Makes the table fill the container */
+    margin-top: 0.8rem;
+    /* Adds spacing above the table */
+    border-collapse: collapse;
+    /* Removes space between table borders */
+}
+
+td {
+    padding: 1rem;
+    /* Adds padding to table cells */
+    border-bottom: 1px solid grey;
+    /* Adds a bottom border to each cell */
+    text-align: center;
+    /* Centers text within table cells */
+}
+
+th {
+    padding: 1rem;
+    /* Adds padding to table headers */
+    background-color: hsl(14, 45%, 36%);
+    /* Sets a background color for table headers */
+    color: white;
+    /* Sets the text color for table headers */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        background-color: transparent;
+        /* Removes background on smaller screens */
+    }
+
+    #container {
+        padding: 20px;
+        /* Adjusts padding for smaller screens */
+    }
+
+    .PageTitle h1 {
+        font-size: 1.5rem;
+        /* Adjusts the title font size */
+    }
+
+    .Description {
+        font-size: 0.85rem;
+        /* Adjusts the font size for the description */
+    }
+
+    #PreparationTime,
+    #Ing,
+    #Ins,
+    #Nut {
+        padding: 0.8rem;
+        /* Reduces padding for smaller screens */
+    }
+
+    table td,
+    table th {
+        padding: 0.8rem;
+        /* Adjusts padding within table cells */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-color: transparent;
+        /* Removes background on very small screens */
+    }
+
+    #container {
+        padding: 15px;
+        /* Further reduces padding for very small screens */
+    }
+
+    .PageTitle h1 {
+        font-size: 1.2rem;
+        /* Adjusts the title font size */
+    }
+
+    .Description {
+        font-size: 0.8rem;
+        /* Reduces the font size for descriptions */
+    }
+
+    table {
+        font-size: 0.8rem;
+        /* Reduces the font size for the table */
+    }
+}
+/* Attribution Section */
+.attribution {
+    font-size: 11px;
+    /* Sets the font size for the attribution text */
+    text-align: center;
+    /* Centers the text */
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    /* Sets the link color */
+}
